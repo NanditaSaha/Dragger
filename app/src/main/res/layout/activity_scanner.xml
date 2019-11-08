@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBottomnav"
+    tools:context=".feature.Dashboard.DashboardActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_55sdp">
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/content_scanner" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:visibility="gone"
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbQrScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_barcode"
+            app:fabSize="normal"
+            app:fabCustomSize="@dimen/_60sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorBottomnav"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/menu_pets"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_paw"/>
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvPet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Animals"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    />
+                <View
+                    android:id="@+id/vPet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu_history"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_time_white"/>
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/nav_history"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <View
+                    android:id="@+id/vHistory"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu_settings"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_nut_icon_white"/>
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/nav_settings"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <View
+                    android:id="@+id/vSettings"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu_profile"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_user_white"/>
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/nav_profile"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <View
+                    android:id="@+id/vProfile"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".feature.ProductDetails.ProductDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+       >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        >
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:id="@+id/pName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/prompt_product_details"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/_24sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pName"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:srcCompat="@drawable/progesterone"/>
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimarylight"
+                android:text="Product Info:"
+                android:textSize="@dimen/_18sdp"
+                />
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:id="@+id/productInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorinactivedot"
+                android:text="Progestagen injection for horses; a convenient alternative to Readyserve oral."
+                android:textSize="@dimen/_14sdp"
+                />
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimarylight"
+                android:text="Product Indication:"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                />
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+               android:id="@+id/pIndication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorinactivedot"
+                android:text="@string/prompt_lorem"
+                android:textSize="@dimen/_14sdp"
+                />
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimarylight"
+                android:text="Direction For User:"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                />
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+               android:id="@+id/pDirection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorinactivedot"
+                android:text="Give a 3ml/500 kg adult mare every 5-7 days by intramuscular injection.
+
+To suppress oestrus in normally cycling mares administer every 5-7 days during competition period."
+                android:textSize="@dimen/_14sdp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rvPdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/broader_bg">
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spAnimaltype"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/broader_bg">
+                        <TextView
+                            android:id="@+id/tvDatePicker"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:drawableRight="@drawable/ic_calendar_blue"
+                            android:textColor="@color/colorBlack"
+                            android:text="Enter start Date"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="right"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Start Date"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp">
+
+                <app.ceva.petapp.share.wigeds.TextViewSemibold
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/rounded_button_bg_blue"
+                    android:gravity="center"
+                    android:text="@string/prompt_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_right_right"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

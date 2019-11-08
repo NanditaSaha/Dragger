@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplashBlue"
+    tools:context=".feature.LoginPrevious.LoginPreviousPreviousActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:ignore="VectorDrawableCompat" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_login"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/colorWhite"/>
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_login_one"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="@dimen/_20sdp"
+    android:orientation="vertical">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            >
+
+            <app.ceva.petapp.share.wigeds.TextViewSemibold
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:text="@string/prompt_login_text"
+                android:textColor="@color/colorButtonText"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:background="@drawable/rounded_button_bg"
+                android:textSize="@dimen/_16sdp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:srcCompat="@drawable/ic_right"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_gravity="right|center_vertical"
+                tools:ignore="VectorDrawableCompat" />
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center">
+
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_registration"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:textColor="@color/colorWhite"/>
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <app.ceva.petapp.share.wigeds.TextViewSemibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_signup"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorPrimary"/>
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@drawable/dash_line"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

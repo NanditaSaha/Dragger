@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.optionmenu.MainActivity">
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_menu_cart"
+        android:title="noti"
+        app:showAsAction="always" />
+
+    <item  android:id="@+id/contactus"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_contact_us"
+        app:showAsAction="withText"
+        />
+    <item  android:id="@+id/aboutus"
+        android:title="About Us"
+        android:icon="@drawable/ic_about_us"
+        android:iconTint="@color/colorPrimary"/>
+    <item  android:id="@+id/privacypolicy"
+        android:title="Privacy Policy"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_refund_policy"
+        android:iconTint="@color/colorPrimary"/>
+    <item  android:id="@+id/tearms"
+        android:title="Tearms and Conditions"
+        android:icon="@drawable/ic_terms_and_conditions"
+        app:showAsAction="withText"
+        android:iconTint="@color/colorPrimary"/>
+    <item  android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_terms_and_conditions"
+        app:showAsAction="withText"
+        android:iconTint="@color/colorPrimary"/>
+</menu>

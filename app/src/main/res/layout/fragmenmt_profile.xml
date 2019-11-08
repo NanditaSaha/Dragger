@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/prompt_my_profile"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/ivEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_pencil" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="Mr John Doe"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorinactivedot"/>
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+           android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_placeholder"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="123/4 lorem ipsum dolor"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorinactivedot"/>
+
+
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+           android:id="@+id/tvRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_address"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Bangkok"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorinactivedot"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+            android:id="@+id/tvPhoneNumber"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mobile"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="+66 2315468790"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+            <app.ceva.petapp.share.wigeds.TextViewSemibold
+                android:id="@+id/tvChangePhoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:text="@string/prompt_change_phn"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorinactivedot"/>
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+           android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_message"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="jhone.dou@gmail.com"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorinactivedot"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <app.ceva.petapp.share.wigeds.TextViewRegular
+           android:id="@+id/tvPassword"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="******"
+            android:textColor="@color/colorinactivedot"
+            android:textSize="@dimen/_15sdp" />
+        <app.ceva.petapp.share.wigeds.TextViewSemibold
+           android:id="@+id/tvChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:text="@string/prompt_change_pwd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

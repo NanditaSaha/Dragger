@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context=".feature.Login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:id="@+id/tvtop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/prompt_edit_profile"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/_24sdp" />
+
+        <LinearLayout
+            android:id="@+id/llmiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtop"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_name"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text=""
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_address"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_placeholder"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text=""
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_region"
+                    android:drawableLeft="@drawable/ic_placeholder"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    app:boxStrokeWidth=".5dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/etRegion"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTextLight"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_message"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text=""
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llmiddle"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30sdp">
+
+
+            <FrameLayout
+                android:id="@+id/editprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.ceva.petapp.share.wigeds.TextViewSemibold
+                    android:id="@+id/tvSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/rounded_button_bg_blue"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_right_right"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

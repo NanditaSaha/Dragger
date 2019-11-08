@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ceva.petapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".livequiz"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".feature.AllPage.AllPagesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"></activity>
+        <activity android:name=".feature.Notification.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"/>
+        <activity
+            android:name=".feature.EditProfile.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".feature.ProductDetails.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProductDetailsTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".feature.Calendar.CalenderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PetDetailsTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".feature.PetDetails.PetDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PetDetailsTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".feature.Scaner.ScannerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".feature.Dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".feature.AddAnimal.AddAnimalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".feature.Registration.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".feature.SendOtp.SendOtpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".feature.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".feature.LoginPrevious.LoginPreviousPreviousActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".feature.splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e21b4f36a73f91094006a7ca788bfa4474900dd0" />
+    </application>
+
+</manifest>

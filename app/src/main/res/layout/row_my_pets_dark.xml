@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightAsh">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:padding="@dimen/_10sdp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivdot"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/small_dot_inactive"/>
+    <LinearLayout
+        android:layout_toRightOf="@+id/ivdot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_centerVertical="true">
+<app.ceva.petapp.share.wigeds.TextViewSemibold
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sheruu"
+    android:textSize="@dimen/_16sdp"
+    android:textColor="@color/colorBlack"/>
+        <app.ceva.petapp.share.wigeds.TextViewSemibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", Camel"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorVeryLightGray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_pencil"/>
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_remove"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

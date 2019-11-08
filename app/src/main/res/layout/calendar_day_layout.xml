@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.ceva.petapp.utils.DateCellView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorTransparent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/id_cell_text"/>
+</app.ceva.petapp.utils.DateCellView>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Ceva</string>
+    <string name="prompt_login">Welcome to</string>
+    <string name="prompt_login_one">Ceva Animal Health app</string>
+    <string name="prompt_login_text">Login</string>
+    <string name="prompt_edit_profile">Edit Profile</string>
+    <string name="prompt_registration">Here for the first time</string>
+    <string name="prompt_signup">Sign Up</string>
+    <string name="prompt_mobile">Mobile No.</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_forget_pwd">Forget Password</string>
+    <string name="prompt_submit">Submit</string>
+    <string name="prompt_otp_verificaation">Otp Verification</string>
+    <string name="prompt_otp_verification_one">We need to send you the OTP to authenticate your account</string>
+    <string name="prompt_otp_mobile">Your Mobile Number</string>
+    <string name="prompt_check_otp">Verifying Number</string>
+    <string name="prompt_check_otp_second">We have sent an OTP on your number</string>
+    <string name="prompt_resend_otp">Resend Otp?</string>
+    <string name="prompt_profile">Create Your Profile</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_region">Region</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_old_passwod">Enter Old Password</string>
+    <string name="prompt_new_password">Enter New Password</string>
+    <string name="prompt_confirm_passwod">Confirm Password</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_term">I Accept Terms And Conditions</string>
+    <string name="prompt_add_animal">Add your Animal</string>
+    <string name="prompt_skip">Skip &amp; Continue</string>
+    <string name="prompt_animal_type">Animal Type</string>
+    <string name="prompt_vaccination_list">Vaccine List</string>
+    <string name="prompt_my_pets">My Pets</string>
+    <string name="prompt_history">History</string>
+    <string name="prompt_my_profile">My Profile</string>
+    <string name="prompt_notification">Notification Settings</string>
+    <string name="prompt_qr">Scan The Code</string>
+    <string name="prompt_pet_details">Pet Details</string>
+    <string name="prompt_pet_notification">Notification</string>
+    <string name="prompt_change_phn">Change Phone Number</string>
+    <string name="prompt_change_pwd">Change Password</string>
+    <string name="prompt_scheduling">Scheduling</string>
+    <string name="prompt_calendar">Calendar Info:</string>
+    <string name="prompt_product_details">Product Details</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nav_my_pets">My Pets</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">settings</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <string name="prompt_confirm">Confirm</string>
+    <string name="prompt_noti_settings">Set your preferred notification reminder day.</string>
+
+
+    <string name="prompt_lorem">Altrenogest acts similarly to the natural hormone progesterone by suppressing the normal sexual cycle and preventing signs of heat and ovulation. Mares return to heat and release natural hormones again once treatment stops.  </string>
+</resources>

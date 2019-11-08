@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".feature.Login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/prompt_profile"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/_24sdp" />
+
+        <LinearLayout
+            android:layout_below="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_90sdp"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_name"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_address"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:inputType="text"
+                        android:textSize="@dimen/_16sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_phone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:focusable="false"
+                        android:inputType="number"
+                        android:textSize="@dimen/_16sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <app.ceva.petapp.share.wigeds.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_region"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        app:boxStrokeWidth=".5dp"/>
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/etRegion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorTextLight"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth=".5dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:inputType="text"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorButtonText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbterm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/prompt_term"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+
+            <FrameLayout
+                android:id="@+id/flSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.ceva.petapp.share.wigeds.TextViewSemibold
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/rounded_button_bg_blue"
+                    android:gravity="center"
+                    android:text="@string/prompt_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_right_right"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

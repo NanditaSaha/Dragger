@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp">
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/colorDeamWhite"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_time"/>
+                <app.ceva.petapp.share.wigeds.TextViewSemibold
+                    android:id="@+id/tvPetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Sheruu"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_16sdp"/>
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvPetCatoeyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", Camel"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_14sdp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:orientation="vertical">
+
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:drawableLeft="@drawable/ic_syringe_with_medication"
+                android:text="Readyserve Injection"
+                android:textColor="@color/colorinactivedot"/>
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:text="12.09.2019"
+                    android:textColor="@color/colorinactivedot"/>
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/productid"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_syringe_with_medication"
+                    android:text=""
+                    android:textColor="@color/colorinactivedot"/>
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/petid"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_syringe_with_medication"
+                    android:text=""
+                    android:textColor="@color/colorinactivedot"/>
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:id="@+id/vacineUniqueId"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_syringe_with_medication"
+                    android:text=""
+                    android:textColor="@color/colorinactivedot"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

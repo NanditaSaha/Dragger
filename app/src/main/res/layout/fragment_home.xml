@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+    <app.ceva.petapp.share.wigeds.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/prompt_my_pets"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/colorBlack"/>
+    <app.ceva.petapp.share.wigeds.TextViewRegular
+        android:id="@+id/tvAddPets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawablePadding="@dimen/_8sdp"
+        android:layout_centerVertical="true"
+        android:text="ADD PETS"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rounded_bg_ash"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorinactivedot"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_petlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+
+        android:id="@+id/rlPets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_paw_ash"/>
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Animals added yet"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorTextLight"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

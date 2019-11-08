@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg_crossed"
+    tools:context=".feature.Calendar.CalenderActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <app.ceva.petapp.share.wigeds.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/prompt_scheduling"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_24sdp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+               android:id="@+id/tvCurrentYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="2019"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_20sdp" />
+            <app.ceva.petapp.share.wigeds.TextViewRegular
+               android:id="@+id/tvCurrentMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEPTEMBER"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_26sdp" />
+            </LinearLayout>
+
+        <sun.bob.mcalendarview.MCalendarView
+            android:id="@+id/calendarview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+        </sun.bob.mcalendarview.MCalendarView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+
+
+                <app.ceva.petapp.share.wigeds.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/prompt_calendar"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_10sdp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginRight="@dimen/_2sdp"
+                  android:background="@drawable/small_dot_red"
+                  />
+              <app.ceva.petapp.share.wigeds.TextViewRegular
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_2sdp"
+                  android:text="Previous"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/colorWhite"
+                  />
+              <TextView
+                  android:layout_width="@dimen/_10sdp"
+                  android:layout_height="@dimen/_10sdp"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginRight="@dimen/_2sdp"
+                  android:background="@drawable/small_dot_green"
+                  />
+              <app.ceva.petapp.share.wigeds.TextViewRegular
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/_2sdp"
+                  android:text="Upcommimg"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/colorWhite"
+                  />
+
+          </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
